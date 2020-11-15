@@ -3,7 +3,7 @@ def cek():
 
 
 def on():
-    if saklar.lampu == "on"
+    if saklar.lampu == "on":
         return "gagal menyalakan lampu bosq, lampu sudah nyala!"
     else:
         saklar.lampu = "on"
@@ -11,7 +11,7 @@ def on():
 
 
 def off():
-    if saklar.lampu == "off"
+    if saklar.lampu == "off":
         return "gagal mematikan lampu bosq, lampu sudah mati!"
     else:
         saklar.lampu = "on"
