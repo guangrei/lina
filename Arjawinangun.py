@@ -21,7 +21,7 @@ except BaseException:
     def html_escape(text):
         return cgi.escape(text, quote=True)
 
-DEFAULT_DELIMITERS = ('{{', '}}')
+DEFAULT_DELIMITERS = ('`', '`')
 EMPTYSTRING = ""
 spaces_not_newline = ' \t\r\b\f'
 re_space = re.compile(r'[' + spaces_not_newline + r']*(\n|$)')
@@ -370,7 +370,10 @@ class Token():
         for f in filters:
             try:
                 calfun = getattr(extensions, f)
-                value = calfun(xtn)
+                if xtn == "_":
+                    value = calfun()
+                else:
+                    value = calfun(xtn)
             except BaseException:
                 continue
 

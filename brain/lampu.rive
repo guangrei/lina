@@ -1,6 +1,6 @@
 + cek lampu
-- hai kak, kondisi lampu kakak saat ini {{lampu | cek}}
+- hai kak, kondisi lampu kakak saat ini `_ | cek`
 + matikan lampu
-- siap, {{lampu | off}} lampu sudah mati bosq
+- siap, `_ | off` 
 + nyalakan lampu
-- 1..2..3 {{lampu | on}} lampu abang sudah nyala :v
+- 1..2..3 `_ | on` 
